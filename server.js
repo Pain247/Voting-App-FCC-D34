@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
-app.listen(process.env.PORT||8080);
+app.listen(process.env.PORT||8080,function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 var routes = require('./app/routes/index.js');
 var mongoose = require('mongoose');
 var passport = require('passport');
