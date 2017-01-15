@@ -1,0 +1,70 @@
+.btn{
+color: green;
+margin-left: auto;
+margin-right:auto;
+
+}
+.page1{
+  background-color: #DDDDDD;
+}
+.menubar{
+  height:40px;
+  background-color: green;
+ }
+.va{
+  font-size:1.8em;
+  margin-top:14px;
+  font-family: 'Raleway', sans-serif;
+  color:white;
+}
+.btn > img {
+	float: left;
+	margin-left: 10px;
+}
+p{
+  margin-top: 50px;
+}
+
+img {
+	margin: 0 auto;
+	display: block;
+  margin-top: 10px;
+}
+.btn {
+	margin: 0 500px;;
+	color: white;
+	background-color:green;
+	display: inline-block;
+	border: 0;
+	font-size: 14px;
+	border-radius: 3px;
+	padding: 10px 5px;
+	width: 240px;
+	font-weight: 500;
+}
+.use{
+  font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align :center;
+}
+#board{
+ transition: margin-left 2s 0.5s ease-in-out;
+ -moz-transition: margin-left 2s 0.5s ease-in-out;
+  -webkit-transition: margin-left 2s 0.5s ease-in-out;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+ height:500px;
+ background-image: url(http://www.xaluan.com/images/news/Image/2011/06/02/1307000132.img.jpg) ;
+}
+.sign{
+  text-align:center;
+  font-size:65px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.b{
+  font-family: 'Raleway', sans-serif;
+    text-align :center;
+    font-size: 13px;
+}

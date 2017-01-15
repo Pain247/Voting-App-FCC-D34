@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<Link  rel = "stylesheet"  href = "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
+	<link href="/public/css/profile.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<script type="text/javascript" src="/public/jquery.js"></script>
+<script type="text/javascript" src="/public/profile.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500" />
+</head>
+
+
+	<body class='page1'>
+		<div class='menubar'>
+	  <ul class="nav nav-pills">
+	    <a class="va" id ='home' href='/poll'>&nbsp;Voting App</a>
+			<a  id="out" class='pull-right' href='/logout'>&nbsp;&nbsp;&nbsp;&nbsp;Log out&nbsp;</a>
+	   <div id='dname'></div>
+		 <div id='ava' class='pull-right'></div>
+	  </ul>
+	  </div>  <br/>  <br/>  <br/>
+		<div id ='info'></div>
+    <br/>
+  		<h1 id='display'></h1>
+		 <h1 class='location' id ='location'></h1>
+		 <div id='polls'></div>
+		 <hr  class= 'ke' width="50%" size='3px' align="center" color="green"/>
+   <h2 class='note'><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp; Note: If the poll is yours, you can delete it!</h2>
+	 <div class='row'>
+		 <div class='col-md-11'>
+	<div id='pollUser'>
+  <br/><ul id="pollBoard">
+  </ul>
+</div>
+</div>
+<div class='col-md-1' id='del'><br/><br/>
+</div>
+<br/>
+	</body>
+	<script type="text/javascript" src="/common/ajax-functions.js"></script>
+	<script type="text/javascript" src="/controllers/userController.client.js"></script>
+
+</html>

@@ -1,0 +1,37 @@
+<head>
+<Link  rel = "stylesheet"  href = "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
+	<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<script type="text/javascript" src="/public/jquery.js"></script>
+<script type="text/javascript" src="controllers/poll.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500" />
+</head>
+
+<header>
+<title> Welcome to Voting App</title>
+</header>
+<body class='page1'>
+<div class="se-pre-con"></div>
+  <div class='menubar'>
+  <ul class="nav nav-pills">
+    <a class="va" id ='home' href='/poll'>&nbsp;Voting App</a>
+		<a  id="out" class='pull-right' href='/logout'>&nbsp;&nbsp;&nbsp;&nbsp;Log out&nbsp;</a>
+   <div id='dname'></div>
+	  <div id='ava' class='pull-right'></div>
+  </ul>
+  </div>
+  <div>
+    <h1 class="poll">Polls
+    <a class="plus " id ='createnew'target="_blank" title="Click here to create a new poll" ><i class="fa fa-plus-square " id='new' aria-hidden="true"></i></h></h1>
+  </div>
+
+  <div class="board"><br/>
+		<ul  id="poll"><br/>
+    <div id='load'> Loading...</div><br/>
+
+		</ul>
+  </div>
+
+</body>
+<script type="text/javascript" src="/common/ajax-functions.js"></script>
+<script type="text/javascript" src="/controllers/userController.client.js"></script>

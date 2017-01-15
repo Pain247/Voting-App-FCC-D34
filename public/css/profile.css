@@ -1,0 +1,84 @@
+.ava{
+  margin-top: -38px;
+  border-radius:4px;
+  margin-right: 16px;
+}
+.page1{
+  background-color: #DDDDDD;
+
+}
+#info{
+  margin-left: 685px;
+  border-width: thick;
+  border-color: green;
+
+}
+.pro{
+  border-radius: 9px;
+}
+.menubar{
+  height:50px;
+  background-color: green;
+ }
+.va{
+  font-size:1.8em;
+  margin-top:14px;
+  font-family: 'Raleway', sans-serif;
+  color:white;
+}
+#display-name{
+  font-size:1.6em;
+ margin-top: -26px;
+  color:white;
+}
+#out{
+  font-size:1.6em;
+  margin-top:9px;
+  color:white;
+}
+#display{
+text-align: center;
+font-size: 40px;
+font-family: 'Raleway', sans-serif;
+
+}
+.location{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+
+}
+.polls{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+}
+.note{
+  font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 17px;
+    color:red;
+}
+.fa-pencil{
+  color:red;
+}
+#pollUser{
+  background-color: white;
+  width:100%;
+  border-radius: 10px;
+ margin-left:20px;
+  margin-bottom: 200px;
+}
+.userPoll{
+  margin-left: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+.choice{
+  color:black;
+}
+.fa-times{
+  margin-top:-10px;
+  vertical-align:9px;
+  color:red;
+}

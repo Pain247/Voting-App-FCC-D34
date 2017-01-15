@@ -1,0 +1,83 @@
+.page1{
+  background-color: #DDDDDD;
+}
+.menubar{
+  height:50px;
+  background-color: green;
+ }
+.va{
+  font-size:1.8em;
+  margin-top:14px;
+  font-family: 'Raleway', sans-serif;
+  color:white;
+}
+.ava{
+  margin-top: -28px;
+  border-radius:4px;
+  margin-right: 16px;
+}
+#out{
+  font-size:1.6em;
+  margin-top:9px;
+  color:white;
+}
+.poll{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 70px;
+ }
+.board{
+  margin-left:auto;
+  margin-right:auto;
+  background-color:white;
+  width:50%;
+  border-radius: 10px;
+}
+.plus{
+  color:green;
+}
+.create{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 70px;
+ }
+.plus{
+  color:green;
+}
+.a{
+  color:red;
+}
+.block{
+  margin-left: auto;
+  margin-right:auto;
+  height:50px;
+  width:50%;
+  border-radius:10px;
+  background-color: white;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(img/Preloader_2.gif) center no-repeat #fff;
+}
+#load{
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+#display-name{
+  font-size:1.6em;
+ margin-top: -26px;
+  color:white;
+}

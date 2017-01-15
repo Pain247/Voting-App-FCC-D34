@@ -1,0 +1,83 @@
+#page1{
+  background-color: #DDDDDD;
+  height: 500px;
+}
+.menubar{
+  height:50px;
+  background-color: green;
+ }
+.va{
+  font-size:1.8em;
+  margin-top:14px;
+  font-family: 'Raleway', sans-serif;
+  color:white;
+}
+#display-name{
+  font-size:1.6em;
+ margin-top: -26px;
+  color:white;
+}
+.create{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 70px;
+ }
+.plus{
+  color:green;
+}
+.a{
+  color:red;
+}
+#newpoll{
+  background-color:white;
+  width:40%;
+  border-radius:10px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+#title{
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+}
+#out{
+  font-size:1.6em;
+  margin-top:9px;
+  color:white;
+}
+.ma{
+  font-size:20px;
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+}
+.op{
+width:50%;
+margin-left: 134px;
+border-radius: 5px;
+height:25px;
+}
+
+strong{
+   font-family: 'Raleway', sans-serif;
+  color:green;
+}
+#thanks{
+  background-color:white;
+  height: 200px;
+  width:40%;
+  border-radius:10px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.c{
+  text-align:center;
+  font-size:40px;
+   font-family: 'Raleway', sans-serif;
+}
+.ava{
+  margin-top: -28px;
+  border-radius:4px;
+  margin-right: 16px;
+}

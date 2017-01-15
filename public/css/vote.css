@@ -1,0 +1,61 @@
+.page1{
+  background-color: #DDDDDD;
+}
+.menubar{
+  height:50px;
+  background-color: green;
+ }
+.va{
+  font-size:1.8em;
+  margin-top:14px;
+  font-family: 'Raleway', sans-serif;
+  color:white;
+}
+#display-name{
+  font-size:1.6em;
+ margin-top: -26px;
+  color:white;
+}
+#out{
+  font-size:1.6em;
+  margin-top:9px;
+  color:white;
+}
+.tell{
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  font-size:70px;
+}
+.loadpoll{
+    font-family: 'Raleway', sans-serif;
+    font-size:30px;
+    margin-left:70px;
+    white-space: nowrap;
+}
+.row{
+  background-color: white;
+  border-radius: 10px;
+
+}
+.options{
+  font-family: 'Raleway', sans-serif;
+  font-size:20px;
+  margin-left: 10px;
+}
+label{
+  margin-left: 97px;
+}
+.vote{
+  font-family: 'Raleway', sans-serif;
+  font-size:20px;
+}
+#load{
+  text-align:center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+.ava{
+  margin-top: -28px;
+  border-radius:4px;
+  margin-right: 16px;
+}
