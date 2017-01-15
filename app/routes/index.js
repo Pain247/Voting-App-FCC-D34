@@ -7,7 +7,6 @@ var ind=0;
 var bparser = require('body-parser');
 var urlencoded = bparser.urlencoded({extended :false});
 var mongo = require("mongodb").MongoClient;
-var urldb="mongodb://rd:123@ds151927.mlab.com:51927/vote-db";
 module.exports = function (app, passport) {
 
 	function isLoggedIn (req, res, next) {
@@ -19,10 +18,10 @@ module.exports = function (app, passport) {
 	}
 
 
-app.route('/')
-		.get(isLoggedIn, function (req, res) {
-			res.sendFile(path + '/public/poll.html');
-		});
+app.route('/').get(function(req,res){
+		if(isLoggedIn) res.redirect('/poll');
+		else res.redirect('/login');
+});
 //đăng nhập
 	app.route('/login')
 		.get(function (req, res) {
@@ -50,7 +49,7 @@ app.route('/create').get(isLoggedIn,function(req,res){
 });
 // Tạo một poll mới và đưa vào csdl
 app.post('/create/api',isLoggedIn,urlencoded,function(req,res){
-mongo.connect(urldb,function(err,db){
+mongo.connect(process.env.MONGO_URI,function(err,db){
  var collection=db.collection('polls');
  var newPoll = function(db,callbacks){
 	 var options =[];
@@ -77,7 +76,7 @@ mongo.connect(urldb,function(err,db){
 
 //api trả về all poll
 app.get('/allpoll',isLoggedIn,function(req,res){
-mongo.connect(urldb,function(err,db){
+mongo.connect(process.env.MONGO_URI,function(err,db){
  var collection1 = db.collection('polls');
  var getAllPoll = function(db,callback){
    collection1.find().toArray(function(err,doc){
@@ -111,7 +110,7 @@ app.route('/poll').get(isLoggedIn,function(req,res){
 // trả về api của từng poll
 app.get('/poll/api/:pollId',function(req,res){
    var id= parseInt(req.params.pollId);
- mongo.connect(urldb,function(err,db){
+ mongo.connect(process.env.MONGO_URI,function(err,db){
    var collection2 = db.collection('polls');
 	 var getPoll = function(db, callback){
     collection2.find({'polls.pollId': id}).toArray(function(err,doc){
@@ -134,7 +133,7 @@ app.get('/poll/:pollId',isLoggedIn,function(req,res){
 // Trả về poll của từng người dùng
 app.get('/polls/:id',isLoggedIn,function(req,res){
  var userPoll = req.params.id;
- mongo.connect(urldb,function(err,db){
+ mongo.connect(process.env.MONGO_URI,function(err,db){
    var collection4 = db.collection('polls');
 	 var getUserPoll = function(db,callback){
 		 collection4.find({'polls.userId':userPoll}).toArray(function(err,doc){
@@ -153,7 +152,7 @@ app.get('/polls/:id',isLoggedIn,function(req,res){
 //Xóa poll
 app.get('/polls/delete/:pollId',isLoggedIn,function(req,res){
   var del= parseInt(req.params.pollId);
-	mongo.connect(urldb,function(err,db){
+	mongo.connect(process.env.MONGO_URI,function(err,db){
     var collection5 = db.collection("polls");
 		var delPoll= function(db,callback){
 			collection5.remove({'polls.pollId':del});
@@ -170,7 +169,7 @@ res.redirect('/profile/'+req.user.github.id);
 //Xử lý sự kiện radio và cập nhật csdl
 app.post('/choice',isLoggedIn,urlencoded,function(req,res){
  var choice = req.body.options;
-	mongo.connect(urldb,function(err,db){
+	mongo.connect(process.env.MONGO_URI,function(err,db){
 		var collection3 = db.collection('polls');
 		var update= function(db, callback){
 		collection3.find({'polls.pollId': idP}).toArray(function(err,doc){
