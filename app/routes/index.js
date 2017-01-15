@@ -17,7 +17,6 @@ module.exports = function (app, passport) {
 		}
 	}
 
-
 app.route('/').get(function(req,res){
 		if(isLoggedIn) res.redirect('/poll');
 		else res.redirect('/login');
