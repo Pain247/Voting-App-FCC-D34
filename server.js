@@ -8,7 +8,7 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var session= require('express-session');
 
-require('dotenv').load();
+require('dotenv').config();
 require('./app/config/passport')(passport);
 mongoose.connect(process.env.MONGO_URI);
 mongoose.Promise=global.Promise;

@@ -13,7 +13,7 @@ $(document).ready(function(){
    // Animate loader off screen
    $(".se-pre-con").fadeOut("slow");;
  });
-  var api = "http://localhost:8080/allpoll";
+  var api = appUrl+"/allpoll";
   $.getJSON(api, function(data){
     n=1;
    for(n=1;n<=data.length;n++){
