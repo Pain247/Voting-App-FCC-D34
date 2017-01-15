@@ -1,5 +1,8 @@
 $(document).ready(function(){
   var n=0;
+  $("#info").hide();
+  $("#display").hide();
+  $("#location").hide();
   var appUrl = window.location.origin;
   $("#createnew").on('click',function(){
     window.location.href= appUrl+'/create';

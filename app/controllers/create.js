@@ -1,5 +1,8 @@
 $(document).ready(function(){
  var n =2;
+ $("#info").hide();
+ $("#display").hide();
+ $("#location").hide();
  $("#thanks").hide();
  $("#new1").on('click',function(){
    n++;

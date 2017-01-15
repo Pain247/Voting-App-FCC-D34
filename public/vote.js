@@ -1,5 +1,8 @@
 $(document).ready(function(){
  var data1=[];
+ $("#info").hide();
+ $("#display").hide();
+ $("#location").hide();
  var a = $(location).attr("href");
  var arr = a.split('/');
  var num = arr[arr.length-1];
