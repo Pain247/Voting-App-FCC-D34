@@ -4,6 +4,7 @@ var idP =0;
 var arr1=[];
 var max=0;
 var ind=0;
+require('dotenv').load();
 var bparser = require('body-parser');
 var urlencoded = bparser.urlencoded({extended :false});
 var mongo = require("mongodb").MongoClient;
